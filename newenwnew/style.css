@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+}
+
+.box1 {
+    background-color: lightgreen;
+    border: 10px solid lightgoldenrodyellow;
+    position: relative;
+    top: -100px;
+    animation: box1Animation 10s infinite alternate;
+}
+button {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.box2 {
+    background-color: lightpink;
+    border: 10px solid lightblue;
+    position: relative;
+    top: 100px;
+    animation: box2Animation 10s infinite alternate;
+}
+
+@keyframes box1Animation {
+    0% {
+        top: -100px;
+        left: 0px;
+    }
+    16.66% {
+        top: 0px;
+        left: 0px;
+    }
+    33% {
+        top: 100px;
+        left: 0px;
+    }
+    49.66% {
+        top: 100px;
+        left: -100px;
+    }
+    66% {
+        top: -100px;
+        left: -100px;
+    }
+    82.66% {
+        top: -100px;
+        left: 0px;
+    }
+    100% {
+        left: 0px;
+        top: -100px;
+    }
+}
+
+@keyframes box2Animation {
+    0% {
+        top: 100px;
+        left: 0px;
+    }
+    16.66% {
+        top: 0px;
+        left : 0px;
+    }
+    33% {
+        top: -100px;
+        left: 0px;
+    }
+    49.66% {
+        top: -100px;
+        left: 100px; 
+    }
+    66% {
+        top: 100px;
+        left: 100px;
+    }
+    82.66% {
+        top: 100px;
+        left: 0px;
+    }
+    100% {
+        top: 100px;
+        left: 0px;
+    }
+}
